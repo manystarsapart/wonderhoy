@@ -1,3 +1,44 @@
 body {
     color: rgb(134, 0, 91);
 }
+
+/* serious stuff */
+.title {
+    color: black;
+    font-family: "Times New Roman", serif;
+
+}
+
+
+
+
+
+
+
+/* playground */
+
+.gay {
+    color: red
+}
+
+#homosexual {
+    color: green    
+}
+
+/* for common features of multiple groups, either classes or ids */
+.gay, .not-gay {
+    background-color: bisque;
+}
+
+/* to only select a group with BOTH of these tags, leave no space or commas */
+.gay.not-gay {
+    /* some stuff that i havent put down */
+}
+
+/* descendant combinator: only selects the thing if the thing at the back is inside the thing in front*/
+/* one space between the two things */
+.lgbtq .gay {
+    /* will only select the "gay" div that is a child inside the "lgbtq" class */
+}
+
+
