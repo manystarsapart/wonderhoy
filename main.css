@@ -1,12 +1,13 @@
 body {
-    color: rgb(134, 0, 91);
+
 }
 
 /* serious stuff */
 .title {
     color: black !important;
     font-family: "Times New Roman", serif !important;
-
+    font-weight: 700 
+    /* bolds the font */
 }
 
 
