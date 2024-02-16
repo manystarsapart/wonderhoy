@@ -4,8 +4,8 @@ body {
 
 /* serious stuff */
 .title {
-    color: black;
-    font-family: "Times New Roman", serif;
+    color: black !important;
+    font-family: "Times New Roman", serif !important;
 
 }
 
