@@ -1,5 +1,9 @@
 body {
-
+    background-image: url("assets/emu.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* serious stuff */
@@ -14,10 +18,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%
+    width: 20%
 }
-
-
 
 
 /* playground */
