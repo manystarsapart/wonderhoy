@@ -1,6 +1,10 @@
+html {
+    height:100%;
+}
+
 body {
-    background-image: url("assets/emu.png");
-    height: 100%;
+    background-image: url("assets/night-street-sakura.gif");
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +15,11 @@ body {
 
 * {
     outline: 2px solid red;
-
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
 }
 
 .title {
@@ -29,30 +37,22 @@ body {
     width: 50%
 }
 
-/* playground */
-
-.gay {
-    color: red
+.navigation-bar {
+    background-color:rgb(50, 50, 50);
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
 }
 
-#homosexual {
-    color: green    
+.flex-container {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    display:flex;
+    flex:auto;
+    justify-content: flex-start;
+    gap:10px;
 }
 
-/* for common features of multiple groups, either classes or ids */
-.gay, .not-gay {
-    background-color: bisque;
+.redirect {
+    color:white;
 }
-
-/* to only select a group with BOTH of these tags, leave no space or commas */
-.gay.not-gay {
-    /* some stuff that i havent put down */
-}
-
-/* descendant combinator: only selects the thing if the thing at the back is inside the thing in front*/
-/* one space between the two things */
-.lgbtq .gay {
-    /* will only select the "gay" div that is a child inside the "lgbtq" class */
-}
-
-
