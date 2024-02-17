@@ -7,6 +7,12 @@ body {
 }
 
 /* serious stuff */
+
+* {
+    outline: 2px solid red;
+
+}
+
 .title {
     color: black !important;
     font-family: "Times New Roman", serif !important;
@@ -18,9 +24,9 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%
+    text-align: center;
+    width: 50%
 }
-
 
 /* playground */
 

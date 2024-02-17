@@ -1,0 +1,42 @@
+/* this is the universal selector */
+* { 
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    /* this is to make it such that the size input in height and width in the 
+    css styling is the exact height and width, without a need to calculate margins*/
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.title {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:40px;
+    margin: 20px
+}
+
+.centered {
+    display: block;
+    margin: auto;
+    width:100%;
+    text-align: center;
+}
+
+/* very important flex container */
+.flex-container {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.flex-container .flex-item {
+    border:10px;
+    border-color:red;
+    padding: 10px;
+}
