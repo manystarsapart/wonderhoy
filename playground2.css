@@ -7,6 +7,7 @@
     box-sizing: border-box;
     /* this is to make it such that the size input in height and width in the 
     css styling is the exact height and width, without a need to calculate margins*/
+    border: 3px solid red;
 }
 
 body {
@@ -29,14 +30,13 @@ body {
 
 /* very important flex container */
 .flex-container {
+    flex-direction: column;
     display:flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     flex: 1 1 auto;
 }
 
-.flex-container .flex-item {
-    border:10px;
-    border-color:red;
+.flex-container.item {
     padding: 10px;
 }
