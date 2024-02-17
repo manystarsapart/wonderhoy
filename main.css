@@ -3,13 +3,35 @@ html {
 }
 
 body {
-    background-image: url("assets/night-street-sakura.gif");
+    
     background-attachment:scroll;
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Comic Sans MS', sans-serif, serif;
 }
+
+.index-background {
+    background-image: url("assets/night-street-sakura.gif");
+}
+
+.about-background {
+    background-image: url("assets/messy-study-room.gif")
+}
+
+.contact-background {
+    background-image: url("assets/autumn-temple.gif")
+}
+
+.jsplayground-background {
+    background-image: url("assets/rainingvillage.gif")
+}
+
+.timeline-background {
+    background-image: url("assets/run-down-room.gif")
+}
+
+
 
 /* serious stuff */
 
