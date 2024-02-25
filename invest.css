@@ -1,0 +1,36 @@
+* { 
+    padding: 0;
+    margin: 0;
+    /* font-size: 16px; */
+    line-height: 1.5;
+    box-sizing: border-box;
+    /* this is to make it such that the size input in height and width in the 
+    css styling is the exact height and width, without a need to calculate margins*/
+    
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+    font-size:40px;
+}
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.alex-about {
+    padding: 20px;
+    height: 200px;
+    background-color:rgb(0, 17, 48);
+    color:white;
+    line-height: 200px;
+    
+
+}
