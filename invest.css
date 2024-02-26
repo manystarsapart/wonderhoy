@@ -31,6 +31,14 @@ h1 {
     background-color:rgb(0, 17, 48);
     color:white;
     line-height: 200px;
-    
+}
 
+.testimonials1 {
+    padding:30px;
+    background-color:rgb(191, 239, 255);
+}
+
+.testimonials2 {
+    padding:30px;
+    background-color:rgb(223,247,255);
 }
