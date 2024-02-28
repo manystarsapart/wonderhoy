@@ -15,25 +15,25 @@ body {
     /* background-image: url("assets/night-street-sakura.gif"); */
     width: 100vw;
     height: 100vh;
-    background: url("assets/night-street-sakura.gif") no-repeat center center fixed;
+    background: url("../assets/night-street-sakura.gif") no-repeat center center fixed;
     background-size: cover;
 }
 
 
 .about-background {
-    background-image: url("assets/messy-study-room.gif")
+    background-image: url("../assets/messy-study-room.gif")
 }
 
 .contact-background {
-    background-image: url("assets/autumn-temple.gif")
+    background-image: url("../assets/autumn-temple.gif")
 }
 
 .jsplayground-background {
-    background-image: url("assets/rainingvillage.gif")
+    background-image: url("../assets/rainingvillage.gif")
 }
 
 .timeline-background {
-    background-image: url("assets/run-down-room.gif")
+    background-image: url("../assets/run-down-room.gif")
 }
 
 
