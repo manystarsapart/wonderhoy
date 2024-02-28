@@ -34,6 +34,8 @@ button {
     padding: 10px;
     list-style-type: none;
     margin: 0;
+    justify-content:end;
+    
 }
 
 .flex-container {
