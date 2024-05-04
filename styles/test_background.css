@@ -1,0 +1,92 @@
+html {
+    height:100%;
+}
+
+body {
+    
+    /* background-attachment:scroll; */
+    /* background-position:top; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    font-family: 'Comic Sans MS', sans-serif, serif;
+    /* overflow:hidden; */
+}
+
+#picblock {
+    background-image: 
+        url('../assets/messy-study-room.gif'),
+        url('../assets/night-street-sakura.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:
+        center top,
+        center bottom;
+    
+}
+
+/* @media (max-width: 480px) {
+    #picblock {
+      background-image: url('../assets/mobile/messy-study-room-mobile.gif');
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position:center;
+
+    }
+} */
+/* @media (min-width: 481px) {
+    #picblock {
+      background-image: url('../assets/desktop/messy-study-room-desktop.gif');
+      /* background-repeat: no-repeat; */
+      background-size:cover;
+      background-position:center;
+
+    }
+}  */
+
+/* serious stuff */
+
+* {
+    /* outline: 2px solid red; */
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.title {
+    color: white !important;
+    font-family: "Times New Roman", serif !important;
+    font-size:50px;
+    font-weight: 700;
+    /* bolds the font */
+    padding: 30px;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%
+}
+
+.navigation-bar {
+    background-color:rgb(50, 50, 50);
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.flex-container {
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    display:flex;
+    flex:auto;
+    justify-content: flex-start;
+    gap:10px;
+}
+
+.redirect {
+    color:white;
+}
