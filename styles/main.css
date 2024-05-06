@@ -13,8 +13,6 @@ body {
     background-size: cover;
     /* font-family: 'Comic Sans MS', sans-serif, serif; */
     height:100vh;
-    
-
 }
 
 .league-spartan-bold {
@@ -28,7 +26,7 @@ body {
 
 .index-background {
     /* background-image: url("assets/night-street-sakura.gif"); */
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background: url("../assets/night-street-sakura.gif") no-repeat center top fixed;
     background-size: cover;
@@ -42,21 +40,56 @@ body {
     background-size: cover;
     background-position:0 -600px;
     height:100vh;
-    /* overflow:hidden; */
+    overflow:hidden;
 }
 
 .contact-background {
-    background-image: url("../assets/autumn-temple.gif")
+    background-image: url("../assets/autumn-temple.gif");
+    background-size: cover;
+    height:100vh;
+    overflow:hidden;
 }
 
 .jsplayground-background {
-    background-image: url("../assets/rainingvillage.gif")
+    background-image: url("../assets/rainingvillage.gif");
 }
 
 .timeline-background {
-    background-image: url("../assets/run-down-room.gif")
+    background-image: url("../assets/run-down-room.gif");
+    background-size: cover;
+    background-position: 0 -800px
 }
 
+
+@media (max-width: 767px) {
+
+    .index-background {
+        background-image: url('../assets/mobile/night-street-sakura-mobile.gif');
+        background-position: center;
+    }
+
+    .about-background {
+        background-image: url('../assets/mobile/messy-study-room-mobile.gif');
+        background-position:center;
+
+    }
+
+    .contact-background {
+        background-image: url("../assets/mobile/autumn-temple-mobile.gif");
+        background-position:center;
+   
+    }
+  
+    .jsplayground-background {
+        background-image: url("../assets/mobile/rainingvillage-mobile.gif");
+        background-position:center;
+    }
+  
+    .timeline-background {
+        background-image: url("../assets/mobile/run-down-room-mobile.gif");
+        background-position:center;
+    }
+}
 
 
 /* serious stuff */
@@ -100,8 +133,14 @@ body {
     color:rgb(0, 0, 0);
     display:flex;
     flex:auto;
-    justify-content: flex-start;
+    justify-content:flex-start;
     gap:10px;
+}
+
+.flex-column {
+    flex-direction:column;
+    padding:30px;
+
 }
 
 .redirect {
@@ -135,4 +174,17 @@ body {
     left:80px;
     margin:-20px;
     font-size:80px;
+}
+
+@media (max-width: 767px) {
+    #wonderhoy {
+      left: 20px; /* Adjust left position for smaller screens */
+      margin: -10px; /* Reduced margin for smaller screens */
+      font-size: 40px; /* Smaller font size for phones */
+    }
+}
+
+.responsive-image {
+    max-width: 50%; /* Ensures the image doesn't exceed the container width */
+    height: auto; /* Maintains the aspect ratio */
 }

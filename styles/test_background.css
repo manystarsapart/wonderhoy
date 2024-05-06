@@ -24,7 +24,7 @@ body {
     
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     #picblock {
       background-image: url('../assets/mobile/messy-study-room-mobile.gif');
       background-repeat: no-repeat;
@@ -33,15 +33,15 @@ body {
 
     }
 } */
-/* @media (min-width: 481px) {
+@media (min-width: 481px) {
     #picblock {
       background-image: url('../assets/desktop/messy-study-room-desktop.gif');
-      /* background-repeat: no-repeat; */
+      background-repeat: no-repeat;
       background-size:cover;
       background-position:center;
 
     }
-}  */
+} 
 
 /* serious stuff */
 
