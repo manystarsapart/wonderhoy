@@ -57,7 +57,8 @@ body {
 .timeline-background {
     background-image: url("../assets/run-down-room.gif");
     background-size: cover;
-    background-position: 0 -800px
+    background-position: 0 -800px;
+    overflow:hidden;
 }
 
 
