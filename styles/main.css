@@ -1,27 +1,48 @@
+* {
+    /* border: 2px solid red; */
+}
+
 html {
     height:100%;
 }
 
 body {
-    
     background-attachment:scroll;
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Comic Sans MS', sans-serif, serif;
+    /* font-family: 'Comic Sans MS', sans-serif, serif; */
+    height:100vh;
+    
+
 }
+
+.league-spartan-bold {
+    font-family: "League Spartan", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 700 !important;
+    font-style: normal;
+  }
+
+
 
 .index-background {
     /* background-image: url("assets/night-street-sakura.gif"); */
     width: 100vw;
     height: 100vh;
-    background: url("../assets/night-street-sakura.gif") no-repeat center center fixed;
+    background: url("../assets/night-street-sakura.gif") no-repeat center top fixed;
     background-size: cover;
+    background-position:0 -320px;
+    overflow:hidden;
 }
 
 
 .about-background {
-    background-image: url("../assets/messy-study-room.gif")
+    background-image: url("../assets/messy-study-room.gif");
+    background-size: cover;
+    background-position:0 -600px;
+    height:100vh;
+    /* overflow:hidden; */
 }
 
 .contact-background {
@@ -50,8 +71,8 @@ body {
 }
 
 .title {
-    color: white !important;
-    font-family: "Times New Roman", serif !important;
+    /* color: white; */
+    font-family: "Times New Roman", serif;
     font-size:50px;
     font-weight: 700;
     /* bolds the font */
@@ -67,15 +88,16 @@ body {
 }
 
 .navigation-bar {
-    background-color:rgb(50, 50, 50);
+    background-color:rgb(255, 255, 255);
     padding: 10px;
     list-style-type: none;
     margin: 0;
+    opacity: 80%;
 }
 
 .flex-container {
     font-family:'Courier New', Courier, monospace;
-    color:white;
+    color:rgb(0, 0, 0);
     display:flex;
     flex:auto;
     justify-content: flex-start;
@@ -83,9 +105,34 @@ body {
 }
 
 .redirect {
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
-.filler {
+/* .filler {
     height: 300vh;
+} */
+
+
+.clear-background {
+    background-color:transparent;
+    height:300px;
+    font-family:'Courier New', Courier, monospace;
+    position:relative;
+    color:#FFBD59!important;
+}
+
+.white-background {
+    font-family:'Courier New', Courier, monospace;
+    opacity: 60%;
+    height:56vh;
+    background-color:white;
+
+}
+
+#wonderhoy {
+    position:absolute;
+    bottom: 0px;
+    left:80px;
+    margin:-20px;
+    font-size:80px;
 }
