@@ -148,6 +148,7 @@ body {
     font-family:'Courier New', Courier, monospace;
     height:56vh;
     background-color: rgba(255, 255, 255, 0.6);
+    padding:10px;
 
 }
 
@@ -162,10 +163,11 @@ body {
 
 .quote {
     padding:40px;
-    font-size:36px;
-    font-family: "Niconne", cursive;
+    font-size:33px;
+    font-family: "Charm", cursive;
     font-weight: 400;
     font-style: normal;
+    line-height:180%;
 }
 
 
@@ -180,7 +182,7 @@ body {
     .quote {
         left:10px;
         padding:10px;
-        font-size:30px;
+        font-size:20px;
     }
 }
 
