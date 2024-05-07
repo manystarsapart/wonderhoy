@@ -1,5 +1,5 @@
 * {
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -159,15 +159,33 @@ body {
     font-size:80px;
 }
 
+
+.quote {
+    padding:40px;
+    font-size:36px;
+    font-family: "Niconne", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 @media (max-width: 767px) {
     #wonderhoy {
-      left: 20px; /* Adjust left position for smaller screens */
-      margin: -10px; /* Reduced margin for smaller screens */
-      font-size: 40px; /* Smaller font size for phones */
+        left: 20px; /* Adjust left position for smaller screens */
+        margin: -10px; /* Reduced margin for smaller screens */
+        font-size: 40px; /* Smaller font size for phones */
+
+    }
+
+    .quote {
+        left:10px;
+        padding:10px;
+        font-size:30px;
     }
 }
 
 .responsive-image {
-    max-width: 50%; /* Ensures the image doesn't exceed the container width */
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
     height: auto; /* Maintains the aspect ratio */
+    
 }
