@@ -1,5 +1,8 @@
 * {
-    /* border: 2px solid red; */
+    /* outline: 2px solid red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -13,41 +16,49 @@ body {
     background-size: cover;
     /* font-family: 'Comic Sans MS', sans-serif, serif; */
     height:100vh;
+    font-size:16px;
+    line-height:1.5;
+}
+
+.title {
+    font-family: "Times New Roman", serif;
+    font-size:50px;
+    font-weight: 700;
+    padding: 30px;
 }
 
 .league-spartan-bold {
-    font-family: "League Spartan", sans-serif !important;
-    font-optical-sizing: auto !important;
-    font-weight: 700 !important;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
   }
 
+.stop-scroll {
+    overflow:hidden;
+}
 
+#background {
+    background-size:cover;
+}
 
 .index-background {
     /* background-image: url("assets/night-street-sakura.gif"); */
     /* width: 100vw; */
     height: 100vh;
     background: url("../assets/night-street-sakura.gif") no-repeat center top fixed;
-    background-size: cover;
     background-position:0 -320px;
-    overflow:hidden;
 }
-
 
 .about-background {
     background-image: url("../assets/messy-study-room.gif");
-    background-size: cover;
     background-position:0 -600px;
     height:100vh;
-    overflow:hidden;
 }
 
 .contact-background {
     background-image: url("../assets/autumn-temple.gif");
-    background-size: cover;
     height:100vh;
-    overflow:hidden;
 }
 
 .jsplayground-background {
@@ -56,9 +67,7 @@ body {
 
 .timeline-background {
     background-image: url("../assets/run-down-room.gif");
-    background-size: cover;
     background-position: 0 -800px;
-    overflow:hidden;
 }
 
 
@@ -92,27 +101,6 @@ body {
     }
 }
 
-
-/* serious stuff */
-
-* {
-    /* outline: 2px solid red; */
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    box-sizing: border-box;
-}
-
-.title {
-    /* color: white; */
-    font-family: "Times New Roman", serif;
-    font-size:50px;
-    font-weight: 700;
-    /* bolds the font */
-    padding: 30px;
-}
-
 .centered {
     display: block;
     margin-left: auto;
@@ -122,18 +110,17 @@ body {
 }
 
 .navigation-bar {
-    background-color:rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.6);;
     padding: 10px;
     list-style-type: none;
     margin: 0;
-    opacity: 80%;
 }
 
 .flex-container {
     font-family:'Courier New', Courier, monospace;
     color:rgb(0, 0, 0);
     display:flex;
-    flex:auto;
+    flex-direction:row;
     justify-content:flex-start;
     gap:10px;
 }
@@ -148,10 +135,6 @@ body {
     color:rgb(0, 0, 0);
 }
 
-/* .filler {
-    height: 300vh;
-} */
-
 
 .clear-background {
     background-color:transparent;
@@ -163,9 +146,8 @@ body {
 
 .white-background {
     font-family:'Courier New', Courier, monospace;
-    opacity: 60%;
     height:56vh;
-    background-color:white;
+    background-color: rgba(255, 255, 255, 0.6);
 
 }
 
