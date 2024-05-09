@@ -44,6 +44,25 @@ function viewGachaStats() {
     
 }
 
+// from here onwards: prompting in node.js environment
+const readline = require('readline');
+
+// Create an instance of readline interface
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+// Ask the user for input
+rl.question('how many times do you want to pull? ', (answer) => {
+    pullForAmount(answer);
+    viewGachaStats();
+    rl.close(); // Close the readline interface
+});
+
 
 
 // todo: 50/50
+
+// todo 2: currently the final inventory array is sorted in the way that the animal is
+// first acquired. 
