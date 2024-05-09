@@ -1,5 +1,5 @@
 * {
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -38,6 +38,8 @@ body {
     overflow:hidden;
 }
 
+
+
 #background {
     background-size:cover;
 }
@@ -71,7 +73,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1087px) {
 
     .index-background {
         background-image: url('../assets/mobile/night-street-sakura-mobile.gif');
@@ -171,7 +173,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1087px) {
     #wonderhoy {
         left: 20px; /* Adjust left position for smaller screens */
         margin: -10px; /* Reduced margin for smaller screens */
@@ -190,4 +192,13 @@ body {
     max-width: 100%; /* Ensures the image doesn't exceed the container width */
     height: auto; /* Maintains the aspect ratio */
     
+}
+
+#tokipona-definitions {
+    white-space:pre; 
+    font-size:25px; 
+    overflow-wrap:break-word; 
+    inline-size:min-content;
+
+
 }
