@@ -54,11 +54,17 @@ const rl = readline.createInterface({
 });
 
 // Ask the user for input
-rl.question('how many times do you want to pull? ', (answer) => {
-    pullForAmount(answer);
-    viewGachaStats();
-    rl.close(); // Close the readline interface
-});
+
+let answer = ""
+while (answer = "") {
+    rl.question('how many times do you want to pull? ', (answer) => {
+        pullForAmount(answer);
+        viewGachaStats();
+        answer =
+        // rl.close(); // Close the readline interface
+    });
+}
+
 
 
 
