@@ -189,7 +189,7 @@ body {
 }
 
 .responsive-image {
-    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    max-width: 90%; /* Ensures the image doesn't exceed the container width */
     height: auto; /* Maintains the aspect ratio */
     
 }
