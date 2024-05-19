@@ -5,7 +5,7 @@
     font-size: 16px;
     line-height: 1.5;
     box-sizing: border-box;
-    background-color:red;
+    background-color:white;
     /* this is to make it such that the size input in height and width in the 
     css styling is the exact height and width, without a need to calculate margins*/
     /* border: 3px solid red; */

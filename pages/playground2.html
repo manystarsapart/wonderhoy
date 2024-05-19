@@ -26,12 +26,29 @@
             <div class="item flex-container centered">a</div> -->
             
 
+        <div class="container">
+            <div class="control"></div>
+            <div class="display">
 
+            </div>
 
+        </div>
+
+        <script>
+            // selects .container div
+            const container = document.querySelector(".container");
+            // selects the first child of .container => .control
+            console.dir(container.firstElementChild);
+            // selects .display div
+            const display = document.querySelector(".display");
+            // selects the prior sibling => .control
+            console.dir(display.previousELementSibling)
+
+        </script>
 
         <!-- </div> -->
     
-        <div class="center">
+        <!-- <div class="center">
             <div class="wave"></div>
             <div class="wave"></div>
             <div class="wave"></div>
@@ -55,7 +72,7 @@
             <div class="wave"></div>
             <div class="wave"></div>
             <div class="wave"></div>
-        </div>
+        </div> -->
     <!-- <img href="../assets/boar.png"> -->
         
 
