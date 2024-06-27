@@ -138,6 +138,12 @@ body {
 }
 
 
+#WIP-display-text {
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+
 .clear-background {
     background-color:transparent;
     height:300px;
