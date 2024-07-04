@@ -1,5 +1,5 @@
 * {
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -82,6 +82,9 @@ body {
     background-position: 0 -800px;
 }
 
+.updates-background {
+    background-image: url("../assets/rainingvillage.gif")
+}
 
 @media (max-width: 1087px) {
 
@@ -127,6 +130,13 @@ body {
     padding: 10px;
     list-style-type: none;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .flex-container {
@@ -171,7 +181,7 @@ body {
 
 }
 
-#wonderhoy {
+#page-title {
     position:absolute;
     bottom: 0px;
     left:80px;
@@ -242,7 +252,7 @@ body {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 160px;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -274,7 +284,7 @@ body {
 
 
 @media (max-width: 1087px) {
-    #wonderhoy {
+    #page-title {
         left: 20px; /* Adjust left position for smaller screens */
         margin: -10px; /* Reduced margin for smaller screens */
         font-size: 40px; /* Smaller font size for phones */
@@ -292,6 +302,15 @@ body {
     max-width: 90%; /* Ensures the image doesn't exceed the container width */
     height: auto; /* Maintains the aspect ratio */
     
+}
+
+#updates-box {
+    white-space: pre-line; /* Preserve newline characters and wrap text */
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 80%;
+    padding:20px;
 }
 
 #tokipona-definitions {
