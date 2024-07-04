@@ -39,6 +39,11 @@ body {
     src: url("../fonts/copperplate.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "MoonTime";
+    src: url("../fonts/MoonTime-Regular.otf") format("opentype");
+}
+
 .stop-scroll {
     overflow:hidden;
 }
@@ -177,15 +182,21 @@ body {
 #bottom-wonderhoy {
     display: none; /* Initially hide the div */
     position: fixed;
-    bottom: 0;
-    left: 50%;
+    bottom: 0%;
+    left: 25%;
     transform: translateX(-50%);
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     padding: 20px;
-    border-top: 1px solid #ccc;
-    width: 80%;
+    /* border-top: 1px solid #ccc; */
+    /* width: 80%; */
     text-align: center;
+    font-family: "MoonTime", 'Courier New', Courier, monospace;
+    font-size:1000%;
+    color:#ffbc58;
+    opacity: 0; /* Start with 0 opacity */
+    transition: opacity 1s ease; /* Transition for opacity change over 0.5 seconds */
   }
+  
 
 #scrolling-gif {
   position: absolute; /* Ensure the image stays fixed relative to the viewport */
