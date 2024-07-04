@@ -21,6 +21,31 @@ window.onload = function() {
     }
     
     disableScroll(); // disable scrolling before animation starts
+
+
+
+
+// to dynamically change the GIF and font size based on viewport width
+  function adaptWidth() {
+    var viewportWidth = window.innerWidth;
+    if (viewportWidth < 1087) {
+      img.src = './assets/night-street-sakura.gif'; 
+      var scaledFontSize = String(0.3 * viewportWidth) + 'px';
+      img.style.height = '100vh'
+      div.style.fontSize = scaledFontSize;
+      div.style.left = '50%';
+    } else {
+      img.src = './assets/night-street-sakura-short.gif';
+      div.style.fontSize = '1000%';
+    }
+  }
+  
+  // call adaptWidth initially and on window resize
+  adaptWidth();
+  window.addEventListener('resize', adaptWidth);
+
+
+
     
     // start scrolling function after a short delay 
     setTimeout(function() {
