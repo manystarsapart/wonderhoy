@@ -28,66 +28,10 @@
 			</div>
 		</nav>
 		
-		<h1 id="bottom-wonderhoy" class="league-spartan-bold">wonderhoy.</h1>
+		<script src="./scripts/scrollwonderhoy.js"></script>
+		<h1 id="bottom-wonderhoy">wonderhoy.</h1>
 		<img id="scrolling-gif" src="./assets/night-street-sakura-short.gif">
-	
-	
-<script>
 
-window.onload = function() {
-  var img = document.getElementById('scrolling-gif');
-  var div = document.getElementById('bottom-wonderhoy');
-  
-  var currentPosition = 0; // Initial position
-  var scrollSpeed = 4; // Adjust scroll speed here (increment position)
-  
-  function scrollImage() {
-    currentPosition += scrollSpeed; // Increment position based on scroll speed
-    img.style.top = -currentPosition + 'px'; // Adjust top position
-    
-    // Check if the entire image has scrolled past its natural height
-    if (currentPosition < (img.clientHeight - window.innerHeight - 30)) {
-      window.requestAnimationFrame(scrollImage);
-    } else {
-		div.style.display = 'block'; // Show the bottom div
-      	setTimeout(function() {
-        div.style.opacity = 1; // Gradually increase opacity
-      }, 1000); // Adjust delay as needed
-    //   enableScroll(); // Enable scrolling after animation completes
-    }
-  }
-  
-  disableScroll(); // Disable scrolling before animation starts
-  
-  // Start scrolling function after a short delay (adjust as needed)
-  setTimeout(function() {
-    scrollImage();
-  }, 1000); // Start after 1 second
-  
-  function disableScroll() {
-    // Prevent scrolling using modern approach for most browsers
-    document.body.style.overflow = 'hidden';
-    // Prevent scrolling for older browsers
-    document.documentElement.style.overflow = 'hidden';
-    // Scroll to top to ensure user doesn't accidentally see any part of the page
-    window.scrollTo(0, 0);
-  }
-  
-  function enableScroll() {
-    // Enable scrolling by resetting overflow to default
-    document.body.style.overflow = '';
-    document.documentElement.style.overflow = '';
-  }
-};
-
-</script>
-	
-
-
-
-
-			  
-		</div>
 
 		<!-- <div class="white-background section-block">
 			<div class="flex-container">
