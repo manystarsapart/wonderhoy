@@ -3,49 +3,45 @@ window.onload = function() {
     var div = document.getElementById('bottom-wonderhoy');
     
     var currentPosition = 0; // initial position
-    var scrollSpeed = 4; // adjust scroll speed here (increment position)
+    var initialScrollSpeed = 6; // initial scroll speed
+    var scrollSpeed = initialScrollSpeed; // current scroll speed
     
     function scrollImage() {
-      currentPosition += scrollSpeed; // increment position based on scroll speed
+      currentPosition += scrollSpeed; // increment position based on current scroll speed
       img.style.top = -currentPosition + 'px'; // adjust top position
       
-      // check if the entire image has scrolled past its natural height
+      // calculate new scroll speed with deceleration effect
       if (currentPosition < (img.clientHeight - window.innerHeight - 30)) {
+        scrollSpeed = Math.max(1, initialScrollSpeed - currentPosition / 200); // adjust the divisor for more/less deceleration
         window.requestAnimationFrame(scrollImage);
       } else {
         div.style.display = 'block'; // show the bottom div
         setTimeout(function() {
           div.style.opacity = 1; // gradually increase opacity
-        }, 1000); // can adjust as needed
+        }, 200); // adjust delay as needed
       }
     }
     
     disableScroll(); // disable scrolling before animation starts
-
-
-
-
-// to dynamically change the GIF and font size based on viewport width
-  function adaptWidth() {
-    var viewportWidth = window.innerWidth;
-    if (viewportWidth < 1087) {
-      img.src = './assets/night-street-sakura.gif'; 
-      var scaledFontSize = String(0.3 * viewportWidth) + 'px';
-      img.style.height = '100vh'
-      div.style.fontSize = scaledFontSize;
-      div.style.left = '50%';
-    } else {
-      img.src = './assets/night-street-sakura-short.gif';
-      div.style.fontSize = '1000%';
+    
+    // function to dynamically change the gif and font size based on viewport width
+    function adaptWidth() {
+      var viewportWidth = window.innerWidth;
+      if (viewportWidth < 1087) {
+        img.src = './assets/night-street-sakura.gif'; 
+        var scaledFontSize = String(0.3 * viewportWidth) + 'px';
+        img.style.height = '100vh';
+        div.style.fontSize = scaledFontSize;
+        div.style.left = '50%';
+      } else {
+        img.src = './assets/night-street-sakura-short.gif';
+        div.style.fontSize = '1000%';
+      }
     }
-  }
-  
-  // call adaptWidth initially and on window resize
-  adaptWidth();
-  window.addEventListener('resize', adaptWidth);
-
-
-
+    
+    // call adaptWidth initially and on window resize
+    adaptWidth();
+    window.addEventListener('resize', adaptWidth);
     
     // start scrolling function after a short delay 
     setTimeout(function() {
