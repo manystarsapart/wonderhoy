@@ -32,7 +32,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-  }
+}
+
+@font-face {
+    font-family: "Copperplate";
+    src: url("../fonts/copperplate.otf") format("opentype");
+}
 
 .stop-scroll {
     overflow:hidden;
@@ -169,6 +174,8 @@ body {
 }
 
 
+
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -222,10 +229,9 @@ body {
 
 .quote {
     padding:40px;
-    font-size:33px;
-    font-family: "Charm", cursive;
+    font-size:28px;
+    font-family: "Copperplate", Arial, sans-serif;
     font-weight: 400;
-    font-style: normal;
     line-height:180%;
 }
 
