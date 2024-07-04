@@ -80,10 +80,10 @@ body {
 
 @media (max-width: 1087px) {
 
-    .index-background {
+    /* .index-background {
         background-image: url('../assets/mobile/night-street-sakura-mobile.gif');
         background-position: center;
-    }
+    } */
 
     .about-background {
         background-image: url('../assets/mobile/messy-study-room-mobile.gif');
@@ -107,6 +107,7 @@ body {
         background-position:center;
     }
 }
+
 
 .centered {
     display: block;
@@ -173,7 +174,28 @@ body {
     font-size:80px;
 }
 
+#bottom-wonderhoy {
+    display: none; /* Initially hide the div */
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    text-align: center;
+  }
 
+#scrolling-gif {
+  position: absolute; /* Ensure the image stays fixed relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  /* height: 100vh; Full height of the viewport */
+  /* object-fit: cover; Maintain aspect ratio and cover entire container */
+  z-index: -1; /* Place it behind other content */
+}
 
 
 .dropdown {
