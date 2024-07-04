@@ -209,6 +209,9 @@ body {
   z-index: -1; /* Place it behind other content */
 }
 
+#nav-icon {
+    height: 20px;
+}
 
 .dropdown {
     float: left;

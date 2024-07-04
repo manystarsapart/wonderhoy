@@ -46,7 +46,7 @@ window.onload = function() {
     // start scrolling function after a short delay 
     setTimeout(function() {
       scrollImage();
-    }, 1000); // start after 1 second
+    }, 300); // start after 0.3s
     
     function disableScroll() {
       // prevent scrolling using modern approach for most browsers
