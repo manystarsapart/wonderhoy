@@ -60,7 +60,7 @@ body {
 }
 
 .contact-background {
-    background-image: url("../assets/autumn-temple.gif");
+    background-image: url("../assets/day-plaza.gif");
     height:100vh;
 }
 
@@ -86,7 +86,7 @@ body {
     }
 
     .contact-background {
-        background-image: url("../assets/mobile/autumn-temple-mobile.gif");
+        background-image: url("../assets/day-plaza.gif");
         background-position:center;
    
     }
@@ -179,7 +179,7 @@ body {
     display: none;
     position: fixed;
     bottom: 0%;
-    left: 25%;
+    left: 35%;
     transform: translateX(-50%);
     padding: 20px;
     text-align: center;
@@ -201,6 +201,11 @@ body {
 
 #nav-icon {
     height: 20px;
+}
+
+.contact-icon {
+    height: 60px;
+    margin: 30px;
 }
 
 .dropdown {

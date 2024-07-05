@@ -35,7 +35,7 @@ window.onload = function() {
         div.style.left = '50%';
       } else {
         img.src = './assets/night-street-sakura-short.gif';
-        div.style.fontSize = '1000%';
+        div.style.fontSize = '1200%';
       }
     }
     
