@@ -82,13 +82,11 @@ body {
     .about-background {
         background-image: url('../assets/mobile/messy-study-room-mobile.gif');
         background-position:center;
-
     }
 
     .contact-background {
-        background-image: url("../assets/day-plaza.gif");
+        background-image: url("../assets/mobile/day-plaza-mobile.gif"); /* this should be resized to phone size but is alright for now */
         background-position:center;
-   
     }
   
     .jsplayground-background {
@@ -179,9 +177,9 @@ body {
     display: none;
     position: fixed;
     bottom: 0%;
-    left: 35%;
+    left:30%;
     transform: translateX(-50%);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-family: "MoonTime", 'Courier New', Courier, monospace;
     font-size:1000%;
@@ -205,7 +203,8 @@ body {
 
 .contact-icon {
     height: 60px;
-    margin: 30px;
+    margin: 10px;
+    fill:rgb(72, 72, 72);
 }
 
 .dropdown {

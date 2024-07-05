@@ -27,7 +27,7 @@ window.onload = function() {
     // change gif and font size based on viewport width
     function adaptWidth() {
       var viewportWidth = window.innerWidth;
-      if (viewportWidth < 1087) {
+      if (viewportWidth < 600) {
         img.src = './assets/night-street-sakura.gif'; 
         var scaledFontSize = String(0.3 * viewportWidth) + 'px';
         img.style.height = '100vh';
