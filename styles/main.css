@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
 }
 
 html {
@@ -98,6 +99,19 @@ body {
         background-image: url("../assets/mobile/run-down-room-mobile.gif");
         background-position:center;
     }
+
+    #page-title {
+        left: 20px; 
+        margin: -10px; 
+        font-size: 40px;
+
+    }
+
+    .quote {
+        left:10px;
+        padding:10px;
+        font-size:20px;
+    }
 }
 
 
@@ -124,7 +138,7 @@ body {
 }
 
 .flex-container {
-    font-family:'Courier New', Courier, monospace;
+    
     color:rgb(0, 0, 0);
     display:flex;
     flex-direction:row;
@@ -152,17 +166,14 @@ body {
 .clear-background {
     background-color:transparent;
     height:300px;
-    font-family:'Courier New', Courier, monospace;
     position:relative;
     color:#FFBD59!important;
 }
 
 .white-background {
-    font-family:'Courier New', Courier, monospace;
     height:56vh;
     background-color: rgba(255, 255, 255, 0.6);
     padding:10px;
-
 }
 
 #page-title {
@@ -266,22 +277,6 @@ body {
     line-height:180%;
 }
 
-
-@media (max-width: 1087px) {
-    #page-title {
-        left: 20px; 
-        margin: -10px; 
-        font-size: 40px;
-
-    }
-
-    .quote {
-        left:10px;
-        padding:10px;
-        font-size:20px;
-    }
-}
-
 .responsive-image {
     max-width: 90%; 
     height: auto; 
@@ -290,7 +285,6 @@ body {
 
 #updates-box {
     white-space: pre-line; /* make line breaks show up */
-    font-family:'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.2;
     width: 80%;
