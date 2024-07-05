@@ -14,7 +14,6 @@ body {
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
-    /* font-family: 'Comic Sans MS', sans-serif, serif; */
     height:100vh;
     font-size:16px;
     line-height:1.5;
@@ -54,14 +53,6 @@ body {
     background-size:cover;
 }
 
-.index-background {
-    /* background-image: url("assets/night-street-sakura.gif"); */
-    /* width: 100vw; */
-    height: 100vh;
-    background: url("../assets/night-street-sakura.gif") no-repeat center top fixed;
-    background-position:0 -320px;
-}
-
 .about-background {
     background-image: url("../assets/messy-study-room.gif");
     background-position:0 -600px;
@@ -87,11 +78,6 @@ body {
 }
 
 @media (max-width: 1087px) {
-
-    /* .index-background {
-        background-image: url('../assets/mobile/night-street-sakura-mobile.gif');
-        background-position: center;
-    } */
 
     .about-background {
         background-image: url('../assets/mobile/messy-study-room-mobile.gif');
@@ -190,33 +176,27 @@ body {
 }
 
 #bottom-wonderhoy {
-    display: none; /* Initially hide the div */
+    display: none;
     position: fixed;
     bottom: 0%;
     left: 25%;
     transform: translateX(-50%);
-    /* background-color: #f0f0f0; */
     padding: 20px;
-    /* border-top: 1px solid #ccc; */
-    /* width: 80%; */
-    
     text-align: center;
     font-family: "MoonTime", 'Courier New', Courier, monospace;
     font-size:1000%;
     color:#ffbc58;
-    opacity: 0; /* Start with 0 opacity */
-    transition: opacity 1s ease; /* Transition for opacity change over 0.5 seconds */
+    opacity: 0;
+    transition: opacity 1s ease; /* transition TODO: FIGURE OUT */ 
   }
   
 
 #scrolling-gif {
-  position: absolute; /* Ensure the image stays fixed relative to the viewport */
+  position: absolute; 
   top: 0;
   left: 0;
-  width: 100vw; /* Full width of the viewport */
-  /* height: 100vh; Full height of the viewport */
-  /* object-fit: cover; Maintain aspect ratio and cover entire container */
-  z-index: -1; /* Place it behind other content */
+  width: 100vw; 
+  z-index: -1;
 }
 
 #nav-icon {
@@ -285,9 +265,9 @@ body {
 
 @media (max-width: 1087px) {
     #page-title {
-        left: 20px; /* Adjust left position for smaller screens */
-        margin: -10px; /* Reduced margin for smaller screens */
-        font-size: 40px; /* Smaller font size for phones */
+        left: 20px; 
+        margin: -10px; 
+        font-size: 40px;
 
     }
 
@@ -299,13 +279,13 @@ body {
 }
 
 .responsive-image {
-    max-width: 90%; /* Ensures the image doesn't exceed the container width */
-    height: auto; /* Maintains the aspect ratio */
+    max-width: 90%; 
+    height: auto; 
     
 }
 
 #updates-box {
-    white-space: pre-line; /* Preserve newline characters and wrap text */
+    white-space: pre-line; /* make line breaks show up */
     font-family:'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.2;

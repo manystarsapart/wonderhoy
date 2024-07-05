@@ -2,29 +2,29 @@ window.onload = function() {
     var img = document.getElementById('scrolling-gif');
     var div = document.getElementById('bottom-wonderhoy');
     
-    var currentPosition = 0; // initial position
-    var initialScrollSpeed = 6; // initial scroll speed
-    var scrollSpeed = initialScrollSpeed; // current scroll speed
+    var currentPosition = 0; 
+    var initialScrollSpeed = 6; 
+    var scrollSpeed = initialScrollSpeed;
     
     function scrollImage() {
-      currentPosition += scrollSpeed; // increment position based on current scroll speed
-      img.style.top = -currentPosition + 'px'; // adjust top position
+      currentPosition += scrollSpeed; // increment position 
+      img.style.top = -currentPosition + 'px';
       
-      // calculate new scroll speed with deceleration effect
+
       if (currentPosition < (img.clientHeight - window.innerHeight - 30)) {
-        scrollSpeed = Math.max(1, initialScrollSpeed - currentPosition / 200); // adjust the divisor for more/less deceleration
+        scrollSpeed = Math.max(1, initialScrollSpeed - currentPosition / 200); // change 200 for faster deceleration
         window.requestAnimationFrame(scrollImage);
       } else {
-        div.style.display = 'block'; // show the bottom div
+        div.style.display = 'block'; // show wonderhoy
         setTimeout(function() {
-          div.style.opacity = 1; // gradually increase opacity
-        }, 200); // adjust delay as needed
+          div.style.opacity = 1; 
+        }, 200); 
       }
     }
     
-    disableScroll(); // disable scrolling before animation starts
+    disableScroll(); // before animation starts
     
-    // function to dynamically change the gif and font size based on viewport width
+    // change gif and font size based on viewport width
     function adaptWidth() {
       var viewportWidth = window.innerWidth;
       if (viewportWidth < 1087) {
@@ -39,26 +39,20 @@ window.onload = function() {
       }
     }
     
-    // call adaptWidth initially and on window resize
     adaptWidth();
-    window.addEventListener('resize', adaptWidth);
+    window.addEventListener('resize', adaptWidth); // call again on window resize
     
-    // start scrolling function after a short delay 
+    // start scrolling
     setTimeout(function() {
       scrollImage();
     }, 300); // start after 0.3s
     
     function disableScroll() {
-      // prevent scrolling using modern approach for most browsers
-      document.body.style.overflow = 'hidden';
-      // prevent scrolling for older browsers
-      document.documentElement.style.overflow = 'hidden';
-      // scroll to top to ensure user doesnt accidentally see any part of the page
-      window.scrollTo(0, 0);
+      document.body.style.overflow = 'hidden'; // for new browsers
+      document.documentElement.style.overflow = 'hidden'; // for old browsers
     }
     
-    function enableScroll() {
-      // enable scrolling by resetting overflow to default
+    function enableScroll() { // reset overflow
       document.body.style.overflow = '';
       document.documentElement.style.overflow = '';
     }
