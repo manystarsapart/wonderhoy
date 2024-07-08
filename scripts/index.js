@@ -2,6 +2,7 @@ window.onload = function() {
     var img = document.getElementById('scrolling-gif');
     var div = document.getElementById('bottom-wonderhoy');
     var navButton = document.getElementById('nav-button')
+    var navButtonAnchor = document.getElementById('nav-button-anchor')
     
     var currentPosition = 0; 
     var initialScrollSpeed = 6; 
@@ -23,7 +24,10 @@ window.onload = function() {
 
         setTimeout(function() {
           navButton.style.display = 'block'; // show button for links after 0.3s
-        }, 300);
+          setTimeout(function() {
+            navButton.style.opacity = 1; 
+          }, 200); 
+        }, 1000);
 
 
       }
@@ -40,6 +44,9 @@ window.onload = function() {
         img.style.height = '100vh';
         div.style.fontSize = scaledFontSize;
         div.style.left = '50%';
+        navButton.style.fontSize = '25px';
+        navButtonAnchor.style.bottom = '5%';
+
       } else {
         img.src = './assets/night-street-sakura-short.gif';
         div.style.fontSize = '1200%';

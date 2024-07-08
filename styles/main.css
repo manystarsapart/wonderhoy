@@ -48,12 +48,24 @@ body {
     overflow:hidden;
 }
 
-.nav-button {
+#nav-button-anchor {
     position: absolute;
-    display: default;
-    background-color: white;
-    opacity: 30%;
-    bottom: 0;
+    bottom: 8%;
+    left: 50%;
+    width: auto;
+    margin: auto;
+    border: none;
+}
+
+#nav-button {
+    background-color: transparent;
+    font-size: 60px;
+    display: none;
+    border: none;
+    font-family: 'MoonTime';
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 #background {
