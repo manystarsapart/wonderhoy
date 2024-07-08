@@ -48,7 +48,13 @@ body {
     overflow:hidden;
 }
 
-
+.nav-button {
+    position: absolute;
+    display: default;
+    background-color: white;
+    opacity: 30%;
+    bottom: 0;
+}
 
 #background {
     background-size:cover;

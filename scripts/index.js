@@ -1,6 +1,7 @@
 window.onload = function() {
     var img = document.getElementById('scrolling-gif');
     var div = document.getElementById('bottom-wonderhoy');
+    var navButton = document.getElementById('nav-button')
     
     var currentPosition = 0; 
     var initialScrollSpeed = 6; 
@@ -15,10 +16,16 @@ window.onload = function() {
         scrollSpeed = Math.max(1, initialScrollSpeed - currentPosition / 200); // change 200 for faster deceleration
         window.requestAnimationFrame(scrollImage);
       } else {
-        div.style.display = 'block'; // show wonderhoy
+        div.style.display = 'block'; // show wonderhoy after 0.2s
         setTimeout(function() {
           div.style.opacity = 1; 
         }, 200); 
+
+        setTimeout(function() {
+          navButton.style.display = 'block'; // show button for links after 0.3s
+        }, 300);
+
+
       }
     }
     
@@ -52,9 +59,9 @@ window.onload = function() {
       document.documentElement.style.overflow = 'hidden'; // for old browsers
     }
     
-    function enableScroll() { // reset overflow
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
-    }
+    // function enableScroll() { // reset overflow
+    //   document.body.style.overflow = '';
+    //   document.documentElement.style.overflow = '';
+    // }
   };
   
