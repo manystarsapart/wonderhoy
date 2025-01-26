@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xiaoliuren</title>
+</head>
+<body>
+    <header>xiaoliuren</header>
+    <input type="text" id="input" placeholder="1 1 1"> 
+    <button id="compute">compute</button>
+    <div id="output"></div>
+    <script>
+        const inputBox = document.getElementById("input");
+        const computeButton = document.getElementById("compute");
+        const output = document.getElementById("output");
+        let current = 1;
+        let v = [];
+        const list = [
+            "1 震 - 大安 - 木 - 雷",
+            "2 巽 - 留连 - 木 - 风",
+            "3 离 - 速喜 - 火 - 火",
+            "4 兑 - 赤口 - 金 - 泽",
+            "5 坎 - 小吉 - 水 - 水",
+            "6 中 - 空亡 - 土",
+            "7 坤 - 病符 - 土 - 地",
+            "8 艮 - 桃花 - 土 - 山",
+            "9 乾 - 天德 - 金 - 天"
+        ];
+
+        computeButton.addEventListener("click", () => {
+            current = 1;
+            v = [];
+
+            const input = inputBox.value;
+            inputArray = convertToArray(input);
+
+            for (let i = 0; i < 3; i++) {
+                let x = inputArray[i];
+                current += (x - 1);
+                while (current > 9) current -= 9;
+                v.push(current);
+                console.log(v);
+            }
+            let outputValue = v.map(index => list[index - 1])
+            console.log(outputValue); 
+            output.innerHTML = outputValue.join('<br>');
+        });
+
+        function convertToArray(input) {
+            const numbers = input.split(' ').map(num => {
+                const parsed = parseInt(num.trim(), 10);
+                if (isNaN(parsed)) {
+                throw new Error(`Invalid number: ${num}`);
+                alert("please input in format: number, number, number");
+                }
+                return parsed;
+            });
+            console.log(numbers);
+            return numbers;
+
+            }
+
+
+
+    </script>
+    
+</body>
+</html>
